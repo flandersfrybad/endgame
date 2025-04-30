@@ -7,3 +7,12 @@
   from = "/*"
   to = "/index.html"
   status = 200 
+[build]
+  command = "npm run build"
+  publish = "dist"
+  environment = { VITE_APP_BASE_URL = "/" }
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200 
